@@ -1,13 +1,375 @@
+/* inter font */
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
+/* maima font */
+@import url("https://fonts.cdnfonts.com/css/miama");
+
+/* sheared Style */
 body {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
+  font-size: 1rem;
   font-style: normal;
+  color: var(--secondary-color);
+  background: rgba(17, 17, 17, 1);
+}
+
+:root {
+  --primary-color: #e6533c;
+  --secondary-color: #fff;
+  --tertiary-color: rgba(255, 255, 255, 0.5);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.button {
+  --button-bg-color: #e6533c;
+  --button-padding: 16px 40px;
+  --button-radius: 42px;
+
+  background-color: var(--button-bg-color);
+  color: var(--secondary-color);
+  border-radius: var(--button-radius);
+  border: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  padding: var(--button-padding);
+  cursor: pointer;
 }
 
 .container {
   max-width: 1060px;
   margin: 0 auto;
+}
+
+.display-flex {
+  display: flex;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+section {
+  margin-top: 100px;
+}
+
+.section-title {
+  --text-align: center;
+  --margin-center: 0 auto;
+
+  font-size: 3rem;
+  font-weight: 900;
+  text-align: var(--text-align);
+  max-width: 650px;
+  margin: var(--margin-center);
+}
+
+.section-description {
+  --text-align: center;
+  --margin-around: 14px auto 58px auto;
+
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.5);
+  text-align: var(--text-align);
+  margin: var(--margin-around);
+  max-width: 650px;
+}
+
+/* Header Style */
+header {
+  margin-top: 57px;
+  background: linear-gradient(180deg, #111111 0%, rgba(119, 119, 119, 0) 100%);
+}
+
+/* Navbar Style */
+.navbar {
+  justify-content: space-between;
+}
+
+.logo a {
+  font-size: 2.2rem;
+  color: #e6533c;
+  font-style: italic;
+  font-weight: 800;
+}
+
+.nav-links {
+  justify-content: space-around;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 39px;
+  padding: 4px;
+}
+
+.nav-link {
+  margin-right: 47px;
+  padding: 8px 20px;
+  border-radius: 46px;
+}
+
+.nav-link:last-child {
+  margin-right: 0;
+}
+
+.nav-link a {
+  color: var(--secondary-color);
+  font-size: 1.2rem;
+}
+
+.active-link {
+  background-color: var(--primary-color);
+}
+
+/* banner Style */
+.banner {
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 32px;
+}
+
+.banner-content {
+  max-width: 50%;
+}
+
+.banner-title {
+  font-weight: 900;
+  font-size: 4.8rem;
+  color: var(--secondary-color);
+  line-height: 93px;
+}
+
+.shape {
+  font-family: "Miama", sans-serif;
+  font-size: 400;
+  font-style: italic;
+}
+
+.banner-description {
+  color: var(--tertiary-color);
+  margin: 28px 0;
+  line-height: 24px;
+}
+
+.join-to-club {
+  margin-right: 14px;
+}
+
+.download-app {
+  --button-bg-color: transparent;
+  background-color: var(--button-bg-color);
+  border: 1px solid #fff;
+}
+
+.image-container {
+  position: relative;
+}
+
+.video-tutorial-badge {
+  position: absolute;
+  background: rgba(48, 48, 48, 0.54);
+  padding: 20px 23px;
+  border: none;
+  gap: 12px;
+  align-items: center;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.circle {
+  background-color: rgba(230, 83, 60, 1);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-icon {
+  width: 15px;
+  height: 15px;
+  background-color: #fff;
+  clip-path: polygon(100% 50%, 0 100%, 0 0);
+}
+
+.content h4 {
+  font-weight: 900;
+  color: #fafaf9;
+  font-size: 1.5rem;
+  text-align: left;
+}
+
+.content p {
+  text-align: left;
+  font-size: 1rem;
+  color: rgba(239, 237, 232, 0.65);
+}
+
+.badgeOne {
+  top: 421px;
+  left: -113px;
+}
+
+.badgeTwo {
+  top: 125px;
+  right: -74px;
+}
+
+/* habit section  */
+.habit-items {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.habit-item {
+  max-width: 230px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.habit-item img {
+  border-radius: 50%;
+  align-items: center;
+}
+
+.habit-title {
+  font-weight: 600;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.habit-description {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+  margin-top: 6px;
+}
+
+/* run section */
+.run-section {
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 32px 29px 54px;
+  background-color: #222222;
+  border-radius: 18px;
+  gap: 165px;
+}
+
+.content-container {
+  width: 50%;
+}
+
+.img-container {
+  width: 50%;
+}
+
+.img-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 18px;
+}
+
+.content-container .section-title,
+.calculator-section .section-title {
+  --text-align: left;
+  text-align: var(--text-align);
+}
+
+.content-container .section-description {
+  --text-align: left;
+  --margin-around: 14px auto 50px auto;
+
+  text-align: var(--text-align);
+  margin: var(--margin-around);
+}
+
+/* calculator-section  */
+.calculator-section .section-description {
+  --text-align: left;
+  --margin-around: 14px auto 88px auto;
+  text-align: var(--text-align);
+}
+
+.calculate {
+  justify-content: space-between;
+}
+
+.BMI-content {
+  background-color: #222222;
+  padding: 50px 0;
+}
+
+.BMI-content .chart-title {
+  font-weight: 900;
+  font-size: 1.8rem;
+  margin-bottom: 52px;
+}
+
+table {
+  text-align: left;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 13px 18px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.chart-table th {
+  font-weight: 500;
+}
+
+.chart-table td {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.your-BMI {
+  max-width: 570px;
+}
+
+.your-BMI .section-title {
+  font-size: 1.8rem;
+}
+
+.your-BMI .section-description {
+  --margin-around: 14px auto 38px auto;
+
+  margin: var(--margin-around);
+}
+
+form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+form input {
+  padding: 12px 40px 12px 20px;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #ffffff99;
+  outline: none;
+  border: none;
+  background: #ffffff1a;
+}
+
+form select {
+  padding: 12px 40px 12px 20px;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #ffffff99;
+  outline: none;
+  border: none;
+  background: #ffffff1a;
 }
