@@ -425,11 +425,12 @@ form select option {
 /* footer section */
 footer {
   background: #ffffff1a;
-  padding: 66px 0 79px 0;
+  padding-top: 66px;
 }
 
 .footer-section {
   justify-content: space-between;
+  margin-bottom: 80px;
 }
 
 .company-info {
@@ -464,4 +465,12 @@ footer {
 .footer-links2 li a {
   font-size: 1.5 rem;
   color: #ffffff80;
+}
+
+.copyright {
+  font-size: 1.3 rem;
+  padding: 35px 0;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.5);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
