@@ -354,22 +354,115 @@ form {
   gap: 10px;
 }
 
-form input {
+input,
+select {
   padding: 12px 40px 12px 20px;
   border-radius: 8px;
   font-size: 1rem;
   color: #ffffff99;
   outline: none;
   border: none;
+  /* width: 100%; */
   background: #ffffff1a;
+  cursor: pointer;
 }
 
-form select {
-  padding: 12px 40px 12px 20px;
-  border-radius: 8px;
-  font-size: 1rem;
-  color: #ffffff99;
-  outline: none;
+select:nth-of-type(2) {
+  grid-column: span 2;
+}
+
+form :nth-last-child(1) {
+  margin-top: 34px;
+}
+
+form select option {
+  background-color: #333;
+  color: #ffffffcc;
+  padding: 10px;
   border: none;
+  outline: none;
+  font-size: 1rem;
+}
+
+/* our-team section start */
+
+.our-team {
+  margin: 88px 0;
+}
+.gallery-container {
+  background-color: #ffffff1a;
+  padding: 20px;
+  border-radius: 18px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.gallery-item {
+  background-image: url("/assets/images/trainer1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+  padding-top: 212px;
+  padding-bottom: 16px;
+  /* padding: 212px auto 16px 19px; */
+  border-radius: 18px;
+}
+
+.gallery-title {
+  font-weight: 900;
+  font-size: 1.25rem;
+  padding-left: 19px;
+}
+
+.gallery-description {
+  color: #ffffff80;
+  font-size: 0.9rem;
+  padding-left: 19px;
+}
+
+/* footer section */
+footer {
   background: #ffffff1a;
+  padding: 66px 0 79px 0;
+}
+
+.footer-section {
+  justify-content: space-between;
+}
+
+.company-info {
+  max-width: 50%;
+}
+
+.company-info .logo {
+  font-size: 4rem;
+  color: #e6533c;
+  font-style: italic;
+  font-weight: 800;
+}
+
+.company-info .description {
+  font-size: 0.9 rem;
+  color: #ffffff80;
+  margin-top: 20px;
+}
+
+.footer-links1 h4,
+.footer-links2 h4 {
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.footer-links1 li,
+.footer-links2 li {
+  margin-bottom: 10px;
+}
+.footer-links1 li a,
+.footer-links2 li a {
+  font-size: 1.5 rem;
+  color: #ffffff80;
 }
