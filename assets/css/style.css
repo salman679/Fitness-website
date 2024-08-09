@@ -450,18 +450,15 @@ footer {
   margin-top: 20px;
 }
 
-.footer-links h4,
 .footer-links h4 {
   font-weight: 700;
   font-size: 1.5rem;
   margin-bottom: 20px;
 }
 
-.footer-links li,
 .footer-links li {
   margin-bottom: 10px;
 }
-.footer-links li a,
 .footer-links li a {
   font-size: 1.5 rem;
   color: #ffffff80;
